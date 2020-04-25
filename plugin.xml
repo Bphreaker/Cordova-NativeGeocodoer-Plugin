@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin id="cordova-plugin-nativegeocoder" version="3.4.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-swift-support" version="3.1.1" >
+<dependency id="cordova-plugin-add-swift-support"/>
 	<name>NativeGeocoder</name>
     <description>Cordova plugin for native forward and reverse geocoding</description>
     <license>MIT</license>
@@ -39,7 +39,6 @@
 
 		<source-file src="src/ios/NativeGeocoder.swift" />
         <framework src="CoreLocation.framework" />
-        <dependency id="cordova-plugin-swift-support" version="~3.1.1"/>
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>$LOCATION_WHEN_IN_USE_DESCRIPTION</string>
         </config-file>
